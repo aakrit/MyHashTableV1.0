@@ -23,6 +23,7 @@ public:
     friend std::istream& operator>>(std::istream& in, HashValue& right);
     friend std::ostream& operator<<(std::ostream& out, HashValue& right);
     
+    ~HashValue();
 private:
     
     std::string studentName;

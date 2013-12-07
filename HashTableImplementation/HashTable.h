@@ -20,12 +20,16 @@ public:
     HashTable(int tableSize);
     bool insert(T newHashValue);
     T* contains(K key);
-    bool deleteValue(T* position);
+    bool deleteValue(T* recordValue);
+    
+    //to print out the hashtable
     friend std::ostream& operator<<(std::ostream& out, const HashTable& right);
+    
+    ~HashTable();
     
 private:
     std::vector<std::vector<T>> hashTable;
-    
+    int tableSize = 0;
 };
 
 

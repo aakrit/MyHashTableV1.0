@@ -11,6 +11,12 @@
 
 using namespace std;
 
+HashValue::HashValue(){
+    
+}
+HashValue::~HashValue(){
+    
+}
 string HashValue::getKey(){
     return this->studentNumber;
 }
@@ -30,6 +36,7 @@ int HashValue::getHash(int tableSize){
     index = index % tableSize;
     return index;
 }
+
 
 
 

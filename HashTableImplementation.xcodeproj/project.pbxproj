@@ -68,10 +68,10 @@
 			children = (
 				8ECBB27018537CB300100C38 /* main.cpp */,
 				8ECBB27918537CC500100C38 /* HashTable.h */,
+				8ECBB27D1853876300100C38 /* HashTable.cpp */,
 				8ECBB27A1853816600100C38 /* HashValue.cpp */,
 				8ECBB27B1853816600100C38 /* HashValue.h */,
 				8ECBB27218537CB300100C38 /* HashTableImplementation.1 */,
-				8ECBB27D1853876300100C38 /* HashTable.cpp */,
 			);
 			path = HashTableImplementation;
 			sourceTree = "<group>";
