@@ -43,8 +43,20 @@ T* HashTable<T,K>::contains(K key){
 
 template<typename T, typename K>
 bool HashTable<T,K>::deleteValue(T* recordValue){
-    if(recordValue == NULL) return false;
-    int index = *recordValue->getHash();
+    if(recordValue == NULL) return false;//not proper value
+    int index = recordValue->getHash(hashTable.size());//find the location in hashtable
+    for(int i = 0; i < hashTable[index].size(); i++){
+        if(hashTable[index][i].getKey() == recordValue->getKey()){
+            //remove the name
+            std::cout << "Current size " << hashTable[index].size();
+            hashTable[index].erase(hashTable[index].begin()+i);
+            std::cout << "Current size " << hashTable[index].size();
+
+            return true;
+        }
+    }
+    return false;
+    
 }
 
 

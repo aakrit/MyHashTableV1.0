@@ -22,7 +22,7 @@ public:
     T* contains(K key);
     bool deleteValue(T* recordValue);
     
-    //to print out the hashtable
+    //method overloading to print out the hashtable
     friend std::ostream& operator<<(std::ostream& out, const HashTable& right);
     
     ~HashTable();

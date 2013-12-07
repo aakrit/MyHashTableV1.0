@@ -32,9 +32,25 @@ int main(int argc, const char * argv[])
     
     HashValue *lookup = studentNamesHashTable.contains(name);
     if(lookup != NULL)
-        cout << "We found your name " << lookup->getKey() << endl;
+        cout << "We found your name: " << lookup->getKey() << endl;
     
+    cout << "Attempting to delete the name" << endl;
+    if(studentNamesHashTable.deleteValue(lookup)){
+        cout << "Student " << lookup->getKey() << " deleted" << endl;
+    }
+    else
+        cout << "Name Doesn't exist in the table" << endl;
     
+    cout << "Attempting to re-Delete" << endl;
+    
+    if(studentNamesHashTable.deleteValue(lookup)){
+        cout << "Student " << lookup->getKey() << " deleted" << endl;
+    }
+    else{
+        cout << "Name Doesn't exist in the table" << endl;
+    }
+    
+    std::cout << std::endl;
     return 0;
 }
 
