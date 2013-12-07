@@ -7,12 +7,19 @@
 //
 
 #include <iostream>
+#include "HashTable.h"
+#include "HashValue.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "Testing my Hash Table!\n";
+    
+    HashTable<HashValue, string> table(50);
+    
     return 0;
 }
 

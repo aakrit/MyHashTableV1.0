@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8ECBB27118537CB300100C38 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB27018537CB300100C38 /* main.cpp */; };
 		8ECBB27318537CB300100C38 /* HashTableImplementation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ECBB27218537CB300100C38 /* HashTableImplementation.1 */; };
+		8ECBB27C1853816600100C38 /* HashValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB27A1853816600100C38 /* HashValue.cpp */; };
+		8ECBB27E1853876300100C38 /* HashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBB27D1853876300100C38 /* HashTable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		8ECBB26D18537CB300100C38 /* HashTableImplementation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HashTableImplementation; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECBB27018537CB300100C38 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8ECBB27218537CB300100C38 /* HashTableImplementation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HashTableImplementation.1; sourceTree = "<group>"; };
+		8ECBB27918537CC500100C38 /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		8ECBB27A1853816600100C38 /* HashValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashValue.cpp; sourceTree = "<group>"; };
+		8ECBB27B1853816600100C38 /* HashValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashValue.h; sourceTree = "<group>"; };
+		8ECBB27D1853876300100C38 /* HashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashTable.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				8ECBB27018537CB300100C38 /* main.cpp */,
+				8ECBB27918537CC500100C38 /* HashTable.h */,
+				8ECBB27A1853816600100C38 /* HashValue.cpp */,
+				8ECBB27B1853816600100C38 /* HashValue.h */,
 				8ECBB27218537CB300100C38 /* HashTableImplementation.1 */,
+				8ECBB27D1853876300100C38 /* HashTable.cpp */,
 			);
 			path = HashTableImplementation;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ECBB27118537CB300100C38 /* main.cpp in Sources */,
+				8ECBB27C1853816600100C38 /* HashValue.cpp in Sources */,
+				8ECBB27E1853876300100C38 /* HashTable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
